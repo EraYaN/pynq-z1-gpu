@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-3" LaunchTime="1493917282">
+  <File Type="PWROPT-DRC" Name="gpu_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="gpu_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="gpu_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="gpu_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="gpu.tcl"/>
+  <File Type="OPT-HWDEF" Name="gpu.hwdef"/>
+  <File Type="RDI-RDI" Name="gpu.vdi"/>
+  <File Type="OPT-DCP" Name="gpu_opt.dcp"/>
+  <File Type="OPT-DRC" Name="gpu_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="gpu_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="gpu_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="gpu_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="gpu_placed.dcp"/>
+  <File Type="PLACE-IO" Name="gpu_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="gpu_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="gpu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="gpu_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="gpu_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="gpu_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="gpu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="gpu_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="gpu_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="gpu_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="gpu_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="gpu_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="gpu_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="gpu_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="gpu_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="gpu_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="gpu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="gpu_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="gpu.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="gpu_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="gpu.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="gpu_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="gpu.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="gpu_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="gpu.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="gpu_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="gpu_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="gpu_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="gpu_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="gpu_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="gpu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="gpu_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="gpu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="gpu_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="gpu_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="gpu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="gpu_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="gpu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="gpu_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="gpu_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="gpu.bit"/>
+  <File Type="BITSTR-RBT" Name="gpu.rbt"/>
+  <File Type="BITSTR-NKY" Name="gpu.nky"/>
+  <File Type="BITSTR-BMM" Name="gpu_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="gpu.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="gpu.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/parameter_def_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/decoder-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_line.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_line-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_pixel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_pixel-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_rect.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_rect-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_sprite.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw_sprite-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/gpu.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ramcontroller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ramcontroller-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spi-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/vgacontroller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/vgacontroller-behaviour.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/gpu-structural.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/draw-structural.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sram.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ssegdecoder.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="gpu"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/gpu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

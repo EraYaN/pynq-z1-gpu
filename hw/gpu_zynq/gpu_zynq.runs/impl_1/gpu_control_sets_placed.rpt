@@ -1,0 +1,96 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Thu May  4 19:02:37 2017
+| Host         : ERWIN-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file gpu_control_sets_placed.rpt
+| Design       : gpu
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              27 |           17 |
+| Yes          | No                    | No                     |               1 |            1 |
+| Yes          | No                    | Yes                    |               3 |            1 |
+| Yes          | Yes                   | No                     |             140 |           66 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal |              Enable Signal              |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+|  XI_IBUF_BUFG | decoder1/int_ready_i_1_n_0              |                                   |                1 |              1 |
+|  XI_IBUF_BUFG | decoder1/p_2_in                         | decoder1/spi_rx_data_reg[0][0]    |                2 |              2 |
+|  XI_IBUF_BUFG | spi1/index[2]_i_1_n_0                   | decoder1/AR[0]                    |                1 |              3 |
+|  XI_IBUF_BUFG |                                         | decoder1/x[5]_i_1_n_0             |                2 |              4 |
+|  XI_IBUF_BUFG |                                         | vgacontroller1/h_count[5]_i_1_n_0 |                1 |              4 |
+|  XI_IBUF_BUFG | decoder1/current_instruction[3]_i_2_n_0 | decoder1/current_instruction      |                2 |              4 |
+|  XI_IBUF_BUFG | decoder1/h[5]_i_2_n_0                   | decoder1/h[5]_i_1_n_0             |                5 |              6 |
+|  XI_IBUF_BUFG | decoder1/next_color                     | reset_IBUF                        |                3 |              6 |
+|  XI_IBUF_BUFG | decoder1/p_2_in                         | decoder1/SR[0]                    |                2 |              6 |
+|  XI_IBUF_BUFG | decoder1/w[7]_i_1_n_0                   | reset_IBUF                        |                3 |              6 |
+|  XI_IBUF_BUFG | decoder1/x[5]_i_2_n_0                   | decoder1/x[5]_i_1_n_0             |                2 |              6 |
+|  XI_IBUF_BUFG | decoder1/next_packet_num119_out         | decoder1/int_ready_i_1_n_0        |                2 |              7 |
+|  XI_IBUF_BUFG | decoder1/y[6]_i_1_n_0                   | decoder1/x[5]_i_1_n_0             |                2 |              7 |
+|  XI_IBUF_BUFG | decoder1/cy_reg[0]_2[0]                 | reset_IBUF                        |                4 |              7 |
+|  XI_IBUF_BUFG | sprite1/cy[6]_i_1__0_n_0                | sprite1/cx_reg[0]_0               |                4 |              7 |
+|  XI_IBUF_BUFG | vgacontroller1/v_count[8]_i_2_n_0       | vgacontroller1/v_count[8]_i_1_n_0 |                4 |              7 |
+|  XI_IBUF_BUFG | rect1/cy[6]_i_2__0_n_0                  | rect1/SR[0]                       |                3 |              7 |
+|  XI_IBUF_BUFG | decoder1/id[7]_i_1_n_0                  | reset_IBUF                        |                3 |              8 |
+|  XI_IBUF_BUFG | decoder1/E[0]                           | rect1/SR[0]                       |                6 |              8 |
+|  XI_IBUF_BUFG | sprite1/cx[7]_i_2_n_0                   | sprite1/cx_reg[0]_0               |                5 |              8 |
+|  XI_IBUF_BUFG | spi1/spi_rx_data0                       | decoder1/spi_rx_data_reg[0][0]    |                2 |              8 |
+|  XI_IBUF_BUFG | line1/cx[7]_i_1__1_n_0                  | reset_IBUF                        |                4 |              8 |
+|  XI_IBUF_BUFG | line1/next_err                          | decoder1/err_reg[9][0]            |                4 |             10 |
+|  XI_IBUF_BUFG | sprite1/data_reg_tmp                    | sprite1/data_reg[0]_i_1_n_0       |                4 |             12 |
+|  XI_IBUF_BUFG |                                         |                                   |                8 |             14 |
+|  XI_IBUF_BUFG |                                         | reset_IBUF                        |               14 |             19 |
++---------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 3      |                     1 |
+| 4      |                     3 |
+| 6      |                     5 |
+| 7      |                     6 |
+| 8      |                     5 |
+| 10     |                     1 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+
