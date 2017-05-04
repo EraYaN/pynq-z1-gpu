@@ -87,3 +87,5 @@
 
 *.runs/
 *.cache/
+
+*.backup.*
