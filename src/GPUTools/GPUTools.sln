@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteTool", "SpriteTool\SpriteTool.csproj", "{EA83BA3A-4EA9-4038-AA0F-F111F8DBAFCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRAMDebugTool", "SRAMDebugTool\SRAMDebugTool.csproj", "{9C32CB44-4530-428F-86A3-DD4FCB762937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapBash", "BitmapBash\BitmapBash.csproj", "{5B76DF7A-B05F-44D5-B928-9E6B51E14241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA83BA3A-4EA9-4038-AA0F-F111F8DBAFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA83BA3A-4EA9-4038-AA0F-F111F8DBAFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA83BA3A-4EA9-4038-AA0F-F111F8DBAFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA83BA3A-4EA9-4038-AA0F-F111F8DBAFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C32CB44-4530-428F-86A3-DD4FCB762937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C32CB44-4530-428F-86A3-DD4FCB762937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C32CB44-4530-428F-86A3-DD4FCB762937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C32CB44-4530-428F-86A3-DD4FCB762937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B76DF7A-B05F-44D5-B928-9E6B51E14241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B76DF7A-B05F-44D5-B928-9E6B51E14241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B76DF7A-B05F-44D5-B928-9E6B51E14241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B76DF7A-B05F-44D5-B928-9E6B51E14241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

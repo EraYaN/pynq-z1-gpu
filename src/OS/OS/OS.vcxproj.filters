@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="bf4_1.h" />
+    <ClCompile Include="Demo.cpp" />
+    <ClCompile Include="floatToString.cpp" />
+    <ClCompile Include="font4x4_set.cpp" />
+    <ClCompile Include="font4x4_set_data.cpp" />
+    <ClCompile Include="font6x8_set.cpp" />
+    <ClCompile Include="font6x8_set_data.cpp" />
+    <ClCompile Include="font8x8_basic.cpp" />
+    <ClCompile Include="font8x8_set.cpp" />
+    <ClCompile Include="font8x8_set_data.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GPULib.cpp" />
+    <ClCompile Include="InputLib.cpp" />
+    <ClCompile Include="InputTester.cpp" />
+    <ClCompile Include="Introduction.cpp" />
+    <ClCompile Include="MemoryFree.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="PS2Keyboard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bf4_1_data.cpp" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Demo.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="floatToString.h" />
+    <ClInclude Include="font4x4_set.h" />
+    <ClInclude Include="font4x4_set_data.h" />
+    <ClInclude Include="font6x8_set.h" />
+    <ClInclude Include="font6x8_set_data.h" />
+    <ClInclude Include="font8x8_basic.h" />
+    <ClInclude Include="font8x8_set.h" />
+    <ClInclude Include="font8x8_set_data.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GPULib.h" />
+    <ClInclude Include="InputLib.h" />
+    <ClInclude Include="InputTester.h" />
+    <ClInclude Include="Introduction.h" />
+    <ClInclude Include="int_pins.h" />
+    <ClInclude Include="MemoryFree.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Pong.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="PS2Keyboard.h" />
+    <ClInclude Include="Sprites.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Visual Micro\.OS.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OS.ino" />
+  </ItemGroup>
+</Project>

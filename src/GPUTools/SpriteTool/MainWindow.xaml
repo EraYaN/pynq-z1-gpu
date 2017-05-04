@@ -1,0 +1,9 @@
+﻿<Window x:Class="SpriteTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpriteTool by Erwin de Haan" Height="167" Width="481">
+	<Grid >
+		<Label x:Name="dropLabelMono" Content="Drop Set Here..." AllowDrop="True" Drop="dropLabelMono_Drop" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="0,0,0,38"/>
+		<TextBox Height="23" TextWrapping="Wrap" Text="" Margin="10,0,10,10" VerticalAlignment="Bottom" x:Name="setName_TextBox"/>
+	</Grid>
+</Window>
