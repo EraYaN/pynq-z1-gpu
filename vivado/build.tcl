@@ -23,8 +23,8 @@
 # 2. The following source(s) files that were local or imported into the original project.
 #    (Please see the '$orig_proj_dir' and '$origin_dir' variable setting below at the start of the script)
 #
-#    "D:/OneDrive/Documenten/Development/PYNQ/pynq-z1-gpu/pynq-z1-gpu.srcs/sources_1/bd/design_1/design_1.bd"
-#    "D:/OneDrive/Documenten/Development/PYNQ/pynq-z1-gpu/pynq-z1-gpu.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd"
+#    "D:/OneDrive/Documenten/Development/PYNQ/pynq-z1-gpu/pynq-z1-gpu.srcs/sources_1/bd/pynq_z1_gpu/pynq_z1_gpu.bd"
+#    "D:/OneDrive/Documenten/Development/PYNQ/pynq-z1-gpu/pynq-z1-gpu.srcs/sources_1/bd/pynq_z1_gpu/hdl/pynq_z1_gpu_wrapper.vhd"
 #
 # 3. The following remote source files that were added to the original project:-
 #
@@ -61,7 +61,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
-set_property -name "top" -value "design_1_wrapper" -objects $obj
+set_property -name "top" -value "pynq_z1_gpu_wrapper" -objects $obj
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -92,7 +92,7 @@ set obj [get_filesets sim_1]
 
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
-set_property -name "top" -value "design_1_wrapper" -objects $obj
+set_property -name "top" -value "pynq_z1_gpu_wrapper" -objects $obj
 
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs -quiet synth_1] ""]} {
@@ -125,7 +125,7 @@ current_run -implementation [get_runs impl_1]
 puts "INFO: Project created:pynq-z1-gpu"
 
 # Create block design
-source $origin_dir/src/bd/design_1.tcl
+source $origin_dir/src/bd/pynq_z1_gpu.tcl
 
 # Generate the wrapper
 set design_name [get_bd_designs]
