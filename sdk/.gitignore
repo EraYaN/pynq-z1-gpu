@@ -1,8 +1,10 @@
-Debug/
 .metadata/
 .sdk/
-*_hw_platform*/
-RemoteSystemsTempFiles/
+.Xil/
+Debug/
+hw_def/
 ps7_cortexa*/
+RemoteSystemsTempFiles/
+bsp_*/
 
 *.hdf
