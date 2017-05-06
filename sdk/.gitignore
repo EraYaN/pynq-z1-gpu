@@ -1,0 +1,8 @@
+Debug/
+.metadata/
+.sdk/
+*_hw_platform*/
+RemoteSystemsTempFiles/
+ps7_cortexa*/
+
+*.hdf
