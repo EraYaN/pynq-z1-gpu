@@ -3,7 +3,6 @@ A port of our old GPU design to the PYNQ-Z1 board.
 
 ## Set-up
 ### Vivado
-
 1. Clone the repository to a path without spaces in it.
 1. Create the Vivado project by either opening Vivado in `vivado/` and running `source build.tcl` in the tcl command line or
    running `build.bat` in `vivado/`.
@@ -13,15 +12,17 @@ A port of our old GPU design to the PYNQ-Z1 board.
 1. Make sure 'Include bitstream' is ticked and select `sdk/` to export the hardware definition.
 
 ### SDK
-1. Once you have successfully exported a bitstream, open the Xilinx SDK.
-1. Set `sdk/` as your workspace.
-1. Select File -> New -> Project
-1. In the New Project Wizard, select Xilinx -> Hardware Platform Specification. Click Next.
-1. In the Target Hardware Specification window, click Browse.
-1. Browse to `sdk/` and select the `.hdl` file you have exported before.
-1. Click Finish, the SDK will now open the project for the selected hardware.
-1. To import the application and corresponding bsp projects, select File -> Import.
-1. Select General -> Existing Projects into Workspace and click Next.
-1. Select the root directory as `sdk/`, make sure the correct projects are selected and click Finish.
+1. Once you have successfully exported a bitstream, go to `sdk/`.
+1. Run `generate_sdk.bat` or `source generate_sdk.tcl` in `xsdk`. The hardware definition and bsp projects will now be set up.
+1. After this, you may open the Xilinx SDK by running `run_sdk.bat` or choosing `sdk/` as your workspace manually.
+1. Finally, import the application projects that are part of this repository and you are good to go!
 
 You should now be able to flash the FPGA with the generated bitstream and run the program on it.
+
+## Making changes
+### Vivado
+* Whenever you have made changes to the Vivado project itself, you should make sure the `build.tcl` script reflects them.
+* Whenever you have made changes to the pynq_z1_gpu block design, it should be re-exported as `pynq_x1_gpu.tcl` to `vivado/src/bd/`.
+
+### SDK
+Unless you have added or changed hardware definitions or bsp designs, no action should be required. Other users should make sure these stay up-to-date by exporting the designs from Vivado.
